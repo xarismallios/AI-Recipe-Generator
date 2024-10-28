@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light background */
+}
+
+h1, h2 {
+    color: #343a40; /* Dark gray for headers */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    background-color: #ffffff; /* White background for list items */
+    border: 1px solid #dee2e6; /* Light border */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary button color */
+    border: none;
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Secondary button color */
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta charset="UTF-8">
+    <title>Recipe Recommendation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center">Upload an Image of Your Fridge</h1>
+        <form action="/" method="post" enctype="multipart/form-data" class="text-center">
+            <div class="form-group">
+                <input type="file" name="file" accept="image/*" class="form-control-file" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Get Recipe</button>
+        </form>
+    </div>
+</body>
+</html>

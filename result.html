@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Recipe Recommendation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body class="bg-light">
+    <div class="container mt-5">
+        <h1 class="text-center">Ingredients Found</h1>
+        <ul class="list-group mb-4">
+            {% for ingredient in ingredients %}
+                <li class="list-group-item">{{ ingredient }}</li>
+            {% endfor %}
+        </ul>
+        
+        <h2 class="text-center">Recommended Recipe</h2>
+        <p class="text-center">{{ recipe }}</p>
+        
+        <div class="text-center">
+            <a href="/" class="btn btn-secondary">Upload Another Image</a>
+        </div>
+    </div>
+</body>
+</html>
